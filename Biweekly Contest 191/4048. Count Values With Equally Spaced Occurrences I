@@ -25,3 +25,8 @@ class Solution:
                 if hash[i][1]-hash[i][0]==hash[i][2]-hash[i][1]:
                     c+=1
         return c
+
+**ABOUT MY CODE**
+TIME :- O(n)
+SPACE :- O(n)
+APPROACH :- Array, Hash Map
