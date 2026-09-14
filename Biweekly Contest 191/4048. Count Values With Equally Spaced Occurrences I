@@ -9,3 +9,19 @@ Return the number of distinct special integers in nums.
 **CONSTRAINTS**
 3 <= nums.length <= 100
 1 <= nums[i] <= 100
+
+**CODE**
+class Solution:
+    def countSpecialIntegers(self, nums: list[int]) -> int:
+        hash={}
+        c=0
+        for i in range (0,len(nums)):
+            if nums[i] in hash:
+                hash[nums[i]].append(i)
+            else:
+                hash[nums[i]]=[i]
+        for i in hash:
+            if len(hash[i])==3:
+                if hash[i][1]-hash[i][0]==hash[i][2]-hash[i][1]:
+                    c+=1
+        return c
