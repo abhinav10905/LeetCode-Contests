@@ -50,7 +50,10 @@ class Solution:
             a.append(s)
             return a
             
-                
+**ABOUT MY CODE**
+TIME :- O(n+m)
+SPACE :- O(n+m)
+APPROACH :- Array, String
                 
         
         
