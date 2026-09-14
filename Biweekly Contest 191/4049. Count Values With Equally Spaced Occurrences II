@@ -30,3 +30,8 @@ class Solution:
                 if m=="true":
                     c+=1
         return c
+
+**ABOUT MY CODE**
+TIME :- O(n)
+SPACE :- O(n)
+APPROACH :- Array, Hash Map
