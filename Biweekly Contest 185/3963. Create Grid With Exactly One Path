@@ -14,3 +14,46 @@ Return any grid such that there is exactly one valid path from the top-left cell
 
 **CONSTRAINTS**
 1 <= m, n <= 25
+
+**CODE**
+class Solution:
+    def createGrid(self, m: int, n: int) -> list[str]:
+        a=[]
+        i=0
+        if n==1:
+            return list("."*m)
+        elif m==1:
+            s="."
+            a=""
+            for i in range (n):
+                a=a+s
+            a=[a]
+            return a
+        else:
+            a=[]
+            g="#"
+            s=".."
+            for i in range (n-2):
+                s=s+g
+            a.append(s)
+            g="#."
+            s="#"
+            for i in range (n-2):
+                g=g+s
+            z=g
+            if z!="":
+                for i in range (m-2):
+                    a.append(z)
+            s="#"
+            for i in range (n-1):
+                s=s+"."
+            a.append(s)
+            return a
+            
+                
+                
+        
+        
+            
+        
+        
