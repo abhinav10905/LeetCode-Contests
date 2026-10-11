@@ -7,3 +7,7 @@ nums[i] > nums[j]
 Return a valid pair [i, j] whose product nums[i] * nums[j] is maximum among all valid pairs. If no valid pair exists, return [-1, -1].
 If multiple valid pairs achieve the maximum product, you may return any of them.
 Note: Please do not copy the description during the contest to maintain the integrity of your submissions.
+
+**CONSTRAINTS**
+2 <= nums.length <= 100
+-100 <= nums[i], target <= 100​​​​​​​
