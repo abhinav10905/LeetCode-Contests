@@ -11,3 +11,18 @@ Note: Please do not copy the description during the contest to maintain the inte
 **CONSTRAINTS**
 2 <= nums.length <= 100
 -100 <= nums[i], target <= 100​​​​​​​
+
+**CODE**
+class Solution:
+    def maxProductPair(self, nums: list[int], target: int) -> list[int]:
+        a=[-1,-1]
+        b=float("-inf")
+        for i in range (0,len(nums)):
+            for j in range (0,len(nums)):
+                if nums[i]>nums[j] and nums[i]+nums[j]==target:
+                    z=nums[i]*nums[j]
+                    if z>b:
+                        a=[i,j]
+                        b=z
+        return a
+        
