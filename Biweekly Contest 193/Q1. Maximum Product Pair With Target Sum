@@ -26,3 +26,7 @@ class Solution:
                         b=z
         return a
         
+**ABOUT MY CODE**
+TIME :- O(n**2)
+SPACE :- O(1)
+APPROACH :- Array, Math
