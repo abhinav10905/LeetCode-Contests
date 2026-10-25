@@ -26,3 +26,7 @@ class Solution:
         c+=(a*(a+1)//2)
         return c
         
+**ABOUT MY CODE**
+TIME :- O(n)
+SPACE :- O(1)
+APPROACH :- Array, Math
