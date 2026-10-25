@@ -26,3 +26,8 @@ class Solution:
             elif nums[i]>nums[i-1] and nums[i]>nums[i+1]:
                 a+=nums[i]
         return a-b
+
+**ABOUT MY CODE**
+TIME :- O(n)
+SPACE :- O(1)
+APPROACH :- Array, Math
