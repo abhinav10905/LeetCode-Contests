@@ -14,3 +14,15 @@ Return an integer denoting the difference between the sum of all peak values and
 **CONSTRAINTS**
 3 <= n == nums.length <= 100
 -100 <= nums[i] <= 100
+
+**CODE**
+class Solution:
+    def peakValleyDifference(self, nums: list[int]) -> int:
+        a=0
+        b=0
+        for i in range (1,len(nums)-1):
+            if nums[i]<nums[i-1] and nums[i]<nums[i+1]:
+                b+=nums[i]
+            elif nums[i]>nums[i-1] and nums[i]>nums[i+1]:
+                a+=nums[i]
+        return a-b
