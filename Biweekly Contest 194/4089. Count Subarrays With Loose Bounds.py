@@ -9,3 +9,20 @@ A subarray is a contiguous non-empty sequence of elements within an array.
 **CONSTRAINTS**
 2 <= nums.length <= 105
 1 <= nums[i], minK, maxK <= 106
+
+**CODE**
+class Solution:
+    def countSubarrays(self, nums: list[int], minK: int, maxK: int) -> int:
+        c=0
+        a=0
+        i=0
+        while i<len(nums):
+            if nums[i]<=maxK and nums[i]>=minK:
+                a+=1
+            else:
+                c+=(a*(a+1)//2)
+                a=0
+            i+=1
+        c+=(a*(a+1)//2)
+        return c
+        
