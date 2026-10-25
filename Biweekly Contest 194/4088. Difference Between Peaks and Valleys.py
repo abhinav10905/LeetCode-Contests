@@ -10,3 +10,7 @@ An index i is called a valley if all of the following conditions hold:
 nums[i] < nums[i - 1]
 nums[i] < nums[i + 1]
 Return an integer denoting the difference between the sum of all peak values and the sum of all valley values.
+
+**CONSTRAINTS**
+3 <= n == nums.length <= 100
+-100 <= nums[i] <= 100
