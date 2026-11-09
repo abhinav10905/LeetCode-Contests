@@ -20,3 +20,8 @@ class Solution:
                 b=2
             a+=b
         return a
+
+**ABOUT MY CODE**
+TIME :- O(n)
+SPACE :- O(1)
+APPROACH :- String
