@@ -8,3 +8,15 @@ A substring is a contiguous non-empty sequence of characters within a string.
 **CONSTRAINTS**
 1 <= s.length <= 105​​​​​​​
 s only consists of 'a', 'b', and 'c' characters.
+
+**CODE**
+class Solution:
+    def countValidSubstrings(self, s: str) -> int:
+        a=0
+        b=0
+        for i in range (0,len(s)):
+            b+=1
+            if i>=2 and s[i-2:i+1]=="abc":
+                b=2
+            a+=b
+        return a
