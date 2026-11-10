@@ -14,3 +14,22 @@ Return true if it is possible to remove all elements using a sequence of valid o
 0 <= types[i] <= m - 1
 1 <= colors[i] <= 105
 1 <= groupSize[t] <= n
+
+**CODE**
+class Solution:
+    def canRemoveAll(self, types: list[int], colors: list[int], groupSize: list[int]) -> bool:
+        stack=[]
+        for i in range (0,len(types)):
+            if stack!=[] and stack[-1][0]==types[i] and stack[-1][1]==colors[i]:
+                stack[-1][2]+=1
+            else:
+                stack.append([types[i],colors[i],1])
+            if stack[-1][2]==groupSize[types[i]]:
+                a=stack.pop()
+        if stack==[]:
+            return True
+        else:
+            return False
+                
+            
+        
