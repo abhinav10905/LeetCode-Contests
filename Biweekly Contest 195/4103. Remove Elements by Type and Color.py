@@ -30,6 +30,10 @@ class Solution:
             return True
         else:
             return False
-                
+
+**ABOUT MY CODE**
+TIME :- O(n)
+SPACE :- O(n)
+APPROACH :- Stack
             
         
