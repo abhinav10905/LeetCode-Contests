@@ -7,3 +7,10 @@ groupSize[t] represents the required number of elements in a removable group of 
 In one operation, you may remove exactly groupSize[t] consecutive elements if all of them have type t and the same color.
 After each removal, the remaining elements become adjacent again while maintaining their relative order.
 Return true if it is possible to remove all elements using a sequence of valid operations. Otherwise, return false.
+
+**CONNSTRAINTS**
+1 <= n == types.length == colors.length <= 105
+1 <= m == groupSize.length <= 105
+0 <= types[i] <= m - 1
+1 <= colors[i] <= 105
+1 <= groupSize[t] <= n
