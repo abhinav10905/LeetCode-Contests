@@ -25,3 +25,7 @@ class Solution:
             c+=(i-abc)
         return c
         
+**ABOUT MY CODE**
+TIME :- O(n)
+SPACE :- O(1)
+APPROACH :- String
